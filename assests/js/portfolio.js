@@ -7,7 +7,7 @@
                     'PHP Developer', 
                     'Learner'
                 ],
-                typeSpeed: 100,
+                typeSpeed: 80,
                 backSpeed: 50,
                 loop: true
             });
