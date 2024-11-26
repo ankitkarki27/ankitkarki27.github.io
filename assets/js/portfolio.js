@@ -1,8 +1,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             new Typed('#typed-output', {
                 strings: [
-                    'Django Developer', 
                     'BCA Student', 
+                    'Django Developer', 
                     'Backend Developer',
                     'PHP Developer', 
                     'Learner'
