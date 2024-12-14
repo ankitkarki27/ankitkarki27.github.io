@@ -35,7 +35,7 @@ const projects = [
     {
         title: "Trendy E-commerce",
         description: "A full-stack E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
-        image: "assets/image/project-trendy.jpg",
+        image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
         date: "2024"
