@@ -5,7 +5,8 @@
                     'Django Developer', 
                     'Backend Developer',
                     'PHP Developer', 
-                    'Learner'
+                    'Learner',
+                    'Problem Solver'
                 ],
                 typeSpeed: 160,
                 backSpeed: 60,
