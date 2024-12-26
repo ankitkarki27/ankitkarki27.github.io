@@ -47,7 +47,7 @@ const projects = [
         description: "A full-stack web application for saving, organizing, and managing favorite websites link efficiently.",
         image: "assets/image/project-bookmarker.jpg",
         tags: ["Django", "React"],
-        github: "https://github.com/ankitkarki27/dj-ecomstore.git",
+        github: "https://github.com/ankitkarki27/bookmarker",
         date: "2024"
     },
     {
@@ -59,7 +59,7 @@ const projects = [
         date: "2024"
     },
     {
-        title: "Todo App",
+        title: "React Todo App",
         description: "A full-stack Todo app with CRUD functionality.It is built using Django REST API and React.",
         image: "assets/image/project-todo.jpg",
         tags: ["Django", "React"],
