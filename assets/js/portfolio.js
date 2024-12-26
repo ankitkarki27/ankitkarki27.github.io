@@ -41,8 +41,17 @@ const projects = [
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
         date: "2024"
     },
+    
     {
-        title: "Blog API",
+        title: " Bookmarker ",
+        description: "A full-stack web application for saving, organizing, and managing favorite websites link efficiently.",
+        image: "assets/image/project-bookmarker.jpg",
+        tags: ["Django", "React"],
+        github: "https://github.com/ankitkarki27/dj-ecomstore.git",
+        date: "2024"
+    },
+    {
+        title: "Blogging System API",
         description: " A backend API for managing blogging system.It supports post creation, updates and deletes. ",
         image: "assets/image/project-blog-api.png",
         tags: ["Django", "Django Rest Framework"],
