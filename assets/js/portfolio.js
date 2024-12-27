@@ -38,7 +38,7 @@ const projects = [
         description: "A full-stack E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
-        github: "https://github.com/ankitkarki27/dj-ecomstore.git",
+        link: "https://github.com/ankitkarki27/dj-ecomstore.git",
         date: "2024"
     },
     
@@ -47,15 +47,19 @@ const projects = [
         description: "A full-stack web application for saving, organizing, and managing favorite websites link efficiently.",
         image: "assets/image/project-bookmarker.jpg",
         tags: ["Django", "React"],
-        github: "https://github.com/ankitkarki27/bookmarker",
+        // github: "https://github.com/ankitkarki27/bookmarker",
+        link:"https://bookmarker-theta.vercel.app/",
         date: "2024"
     },
+
+    
+
     {
         title: "Blogging System API",
         description: " A backend API for managing blogging system.It supports post creation, updates and deletes. ",
         image: "assets/image/project-blog-api.png",
         tags: ["Django", "Django Rest Framework"],
-        github: "https://github.com/ankitkarki27/blog-system-backend.git",
+        link: "https://github.com/ankitkarki27/blog-system-backend.git",
         date: "2024"
     },
     {
@@ -63,15 +67,15 @@ const projects = [
         description: "A full-stack Todo app with CRUD functionality.It is built using Django REST API and React.",
         image: "assets/image/project-todo.jpg",
         tags: ["Django", "React"],
-        github: "https://github.com/ankitkarki27/django-react-todo-rest-api.git",
+        link: "https://github.com/ankitkarki27/django-react-todo-rest-api.git",
         date: "2024"
     },
     {
         title: "Donors Nepal",
-        description: " A full-stack Online Blood Donors Finder System built with PHP, MySQL, HTML, CSS and Bootstrap.",
+        description: " A full-stack Online Blood Donors Finder System built with PHP,Laravel, MySQL, HTML, CSS and Bootstrap.",
         image: "assets/image/project-dn.jpg",
         tags: ["PHP", "Laravel","MySQL"],
-        github: "https://github.com/ankitkarki27/Donors-Nepal.git",
+        link: "https://github.com/ankitkarki27/Donors-Nepal.git",
         date: "2024"
     },
     {
@@ -79,7 +83,7 @@ const projects = [
         description: "  A full-stack Scrap Management System built with PHP, MySQL, HTML, CSS and JS.  ",
         image: "assets/image/project-uthaoo.jpg",
         tags: ["PHP", "MySQL"],
-        github: "https://github.com/ankitkarki27/uthaoo-Online-Scrap-Collection-System.git",
+        link: "https://github.com/ankitkarki27/uthaoo-Online-Scrap-Collection-System.git",
         date: "2024"
     },
     
@@ -112,11 +116,13 @@ projects.forEach(project => {
             <p class="text-gray-300 text-sm mb-6">${project.description}</p>
             <div class="flex justify-between items-center">
                 <div class="flex space-x-4">
-                    <a href="${project.github}" target="_blank" 
-                       class="text-sm text-gray-300 hover:text-gray-400 transition-transform transform hover:scale-110">
-                        <i class="fab fa-github"></i> Code
+                    <a href="${project.link}" target="_blank" 
+                       class="text-sm text-gray-200 hover:text-blue-400 transition-transform transform">
+                      View Project  <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
+                     
                 </div>
+                
                 <div class="flex items-center text-sm text-gray-400">
                     <i class="far fa-calendar-alt mr-2"></i>
                     <span>${project.date}</span>
