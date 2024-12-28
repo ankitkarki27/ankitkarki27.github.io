@@ -34,7 +34,7 @@
     // Projects data
 const projects = [
     {
-        title: "Trendy E-commerce",
+        title: "Trendy : E-commerce",
         description: "A full-stack E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
@@ -51,9 +51,15 @@ const projects = [
         link:"https://bookmarker-theta.vercel.app/",
         date: "2024"
     },
-
-    
-
+    {
+        title: "Proud - Artists Platform ",
+        description: "A frontend web app for artists to showcase, organize, and sell their work using a digital platform.",
+        image: "assets/image/project-proud.png",
+        tags: ["Tailwind CSS", "HTML", "JavaScript"],
+        github: "https://github.com/ankitkarki27/proud-frontend-html-tailwindcss-js",
+        link: "https://proud-artists-platform.netlify.app/",
+        date: "2024"
+    },
     {
         title: "Blogging System API",
         description: " A backend API for managing blogging system.It supports post creation, updates and deletes. ",
