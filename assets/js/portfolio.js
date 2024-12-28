@@ -54,7 +54,7 @@ const projects = [
     {
         title: "Proud - Artists Platform ",
         description: "A frontend web app for artists to showcase, organize, and sell their work using a digital platform.",
-        image: "assets/image/project-proud.png",
+        image: "assets/image/image.png",
         tags: ["Tailwind CSS", "HTML", "JavaScript"],
         github: "https://github.com/ankitkarki27/proud-frontend-html-tailwindcss-js",
         link: "https://proud-artists-platform.netlify.app/",
