@@ -36,6 +36,9 @@
             animation: float 4s ease-in-out infinite;
         }
     </style>
+    <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
+
 </head>  
 <body class="bg-gray-900"  style="font-family: 'Poppins', sans-serif;">
 
@@ -62,7 +65,8 @@
                     <a href="#skills" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Skills</a>
                     <a href="#projects" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Projects</a>
                     <a href="#education" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Education</a>
-                    <a href="#contact" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Contact-me</a>
+                    <a href="#contact" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Contact</a>
+                
                 </div>
                 <button class="md:hidden" id="menuBtn">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,13 +117,19 @@
                 </p>
 
                 <div class="flex space-x-4">
-                    <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded">
-                        Projects
+                    <!-- View Projects Button -->
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded flex items-center space-x-2">
+                        <ion-icon name="folder-outline" class="text-xl"></ion-icon>
+                        <span>View Projects</span>
                     </a>
-                    <a href="assets/resume/Ankit Karki - Resume.pdf"  target="_blank" class="border border-blue-600 text-blue-600 hover:bg-blue-400/10 hover:text-white py-2 px-4 rounded">
-                        Resume
+                
+                    <!-- Resume Button -->
+                    <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank" class="border border-blue-600 text-blue-600 hover:bg-blue-400/10 hover:text-white py-2 px-4 rounded flex items-center space-x-2">
+                        <ion-icon name="document-text-outline" class="text-xl"></ion-icon>
+                        <span>Resume</span>
                     </a>
                 </div>
+                
                 <div class="flex space-x-4 mt-6" data-aos="fade-right" data-aos-delay="400">
                     <a href="https://github.com/ankitkarki27" target="_blank" 
                        class="text-gray-100 hover:text-gray-600 transform hover:scale-110 transition-all">
