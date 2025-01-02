@@ -39,8 +39,23 @@
     <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
 
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mako&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       
+        body{
+            font-family: "Poppins", serif;
+        }
+    </style> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mako&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+          font-family: "Merriweather Sans", serif;
+          font-optical-sizing: auto;  
+          font-style: normal;
+           } 
+      </style>
 </head>  
-<body class="bg-gray-900"  style="font-family: 'Poppins', sans-serif;">
+<body class="bg-gray-900">
 
 </body>
     <!-- Navigation -->
@@ -60,12 +75,12 @@
             </a>
                 </div>
                 <div class="hidden md:flex space-x-4">
-                    <a href="#home" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Home</a>
-                    <a href="#about" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">About</a>
-                    <a href="#skills" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Skills</a>
-                    <a href="#projects" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Projects</a>
-                    <a href="#education" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Education</a>
-                    <a href="#contact" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-4">Contact</a>
+                    <a href="#home" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-18">Home</a>
+                    <a href="#about" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
+                    <a href="#skills" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
+                    <a href="#projects" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
+                    <a href="#education" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
+                    <a href="#contact" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
                 
                 </div>
                 <button class="md:hidden" id="menuBtn">
@@ -78,12 +93,12 @@
         <!-- Mobile Menu -->
         <div class="md:hidden hidden" id="mobileMenu">
             <div class="px-10 py-3 space-y-2">
-                <a href="#home" class="block text-gray-50 text-sm hover:text-blue-500">Home</a>
-                <a href="#about" class="block text-gray-50 text-sm hover:text-blue-500">About</a>
-                <a href="#skills" class="block text-gray-50 text-sm hover:text-blue-500">Skills</a>
-                <a href="#projects" class="block text-gray-50 text-sm hover:text-blue-500">Projects</a>
-                <a href="#education" class="block text-gray-50 text-sm hover:text-blue-500">Education</a>
-                <a href="#contact" class="block text-gray-50 text-sm hover:text-blue-500">Contact</a>
+                <a href="#home" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Home</a>
+                <a href="#about" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
+                <a href="#skills" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
+                <a href="#projects" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
+                <a href="#education" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
+                <a href="#contact" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
             </div>
         </div>
     </nav>
@@ -381,6 +396,7 @@
     </div>
   </section>
   
+
 <!-- Projects Section -->
 <section id="projects" class="py-20 bg-gray-900">
     <div class="container mx-auto px-6">
@@ -473,19 +489,19 @@
             
             <div class="flex justify-center space-x-8 text-gray-600 text-center">
                 <a href="https://github.com/ankitkarki27"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-gray-600 transition duration-300">
-                    <i class="fab fa-github text-3xl mb-1"></i>
+                    <ion-icon name="logo-github" class="text-3xl"></ion-icon>
                     <span class="text-sm">GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/in/ankitkarki27/"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-blue-600 transition duration-300">
-                    <i class="fab fa-linkedin text-3xl mb-1"></i>
+                    <ion-icon name="logo-linkedin" class="text-3xl"></ion-icon>
                     <span class="text-sm">LinkedIn</span>
                 </a>
                 <a href="mailto:ankitkarki8088@gmai.com"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-[#D14836] transition duration-300">
-                    <i class="fa fa-envelope text-3xl mb-1"></i>
+                    <ion-icon name="mail-outline" class="text-3xl"></ion-icon>
                     <span class="text-sm">Email</span>
                 </a>
                 <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank"  class="flex flex-col items-center text-gray-100 hover:text-blue-400 transition duration-300">
-                    <i class="fa-regular fa-file text-3xl mb-1"></i>
+                    <ion-icon name="document-text-outline" class="text-3xl"></ion-icon>
                     <span class="text-sm">Resume</span>
                 </>
             </div>
@@ -512,16 +528,12 @@
             <div class="flex space-x-6">
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/meenfaforlife/"  target="_blank"  class="transform hover:scale-110 hover:text-pink-500 transition-all duration-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
+                    <ion-icon name="logo-instagram"  class="text-3xl"></ion-icon>
                 </a>
 
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/AnkitMeenFaKarki/" target="_blank"  class="transform hover:scale-110 hover:text-blue-500 transition-all duration-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
-                    </svg>
+                    <ion-icon name="logo-facebook"  class="text-3xl"></ion-icon>
                 </a>
                 
             </div>
