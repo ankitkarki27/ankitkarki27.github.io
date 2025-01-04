@@ -69,7 +69,7 @@ const projects = [
         tags: ["Tailwind CSS", "HTML", "JavaScript"],
         github: "https://github.com/ankitkarki27/proud-frontend-html-tailwindcss-js",
         link: "https://proud-artists-platform.netlify.app/",
-        date: "2024"
+        date: "2023"
     },
     {
         title: "Blogging System API", 
@@ -105,7 +105,7 @@ const projects = [
         image: "assets/image/project-uthaoo.jpg",
         tags: ["PHP", "MySQL"],
         github: "https://github.com/ankitkarki27/uthaoo-Online-Scrap-Collection-System.git",
-        date: "2024"
+        date: "2023"
     }
 ];
 
