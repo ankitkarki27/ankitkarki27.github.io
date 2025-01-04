@@ -381,7 +381,6 @@
     </div>
   </section>
   
-
 <!-- Projects Section -->
 <section id="projects" class="py-20 bg-gray-900">
     <div class="container mx-auto px-6">
@@ -390,10 +389,34 @@
             <h2 class="text-3xl text-gray-100 font-bold" data-aos="fade-up" data-aos-delay="100">Recent Projects
                 <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
             </h2>
+           <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 mt-8" id="filter-buttons">
+                <button class="filter-btn active px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-blue-500/30" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="frontend">
+                    Frontend
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="backend">
+                    Backend
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="full-stack">
+                    Full Stack
+                </button>
+                <!-- <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="ui">
+                    UI/UX
+                </button> -->
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left" id="projects-grid">
+                <!-- JavaScript projects will be dynamically inserted here -->
+            </div>
         </div>
         <div id="projects-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>   
     </div>
 </section>
+
 
 <!-- Education Section -->
 <section id="education" class="py-20 bg-gray-900">
@@ -474,19 +497,19 @@
             
             <div class="flex justify-center space-x-8 text-gray-600 text-center">
                 <a href="https://github.com/ankitkarki27"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-gray-600 transition duration-300">
-                    <ion-icon name="logo-github" class="text-3xl"></ion-icon>
+                    <ion-icon name="logo-github" class="text-3xl mb-2" ></ion-icon>
                     <span class="text-sm">GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/in/ankitkarki27/"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-blue-600 transition duration-300">
-                    <ion-icon name="logo-linkedin" class="text-3xl"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="text-3xl mb-2"></ion-icon>
                     <span class="text-sm">LinkedIn</span>
                 </a>
                 <a href="mailto:ankitkarki8088@gmai.com"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-[#D14836] transition duration-300">
-                    <ion-icon name="mail-outline" class="text-3xl"></ion-icon>
+                    <ion-icon name="mail-outline" class="text-3xl mb-2"></ion-icon>
                     <span class="text-sm">Email</span>
                 </a>
                 <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank"  class="flex flex-col items-center text-gray-100 hover:text-blue-400 transition duration-300">
-                    <ion-icon name="document-text-outline" class="text-3xl"></ion-icon>
+                    <ion-icon name="document-text-outline" class="text-3xl mb-2"></ion-icon>
                     <span class="text-sm">Resume</span>
                 </>
             </div>
@@ -508,19 +531,18 @@
 <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="text-2xl font-bold mb-4 md:mb-0 hover:text-blue-400 transition-colors cursor-pointer">AK.</div>
+            <div class="text-2xl font-bold mb-4 md:mb-0 transition-colors cursor-pointer">AK.</div>
             
-            <div class="flex space-x-6">
-                <!-- Instagram -->
+            <div class="flex space-x-6">                 
+                <a href="https://youtu.be/i90NXcPAkds?si=Vv3odJuhzk-I65zL" target="_blank"  class="transform hover:scale-110 hover:text-red-500 transition-all duration-200">
+                    <ion-icon name="logo-youtube"  class="text-3xl"></ion-icon>
+                </a>
                 <a href="https://www.instagram.com/meenfaforlife/"  target="_blank"  class="transform hover:scale-110 hover:text-pink-500 transition-all duration-200">
                     <ion-icon name="logo-instagram"  class="text-3xl"></ion-icon>
                 </a>
-
-                <!-- Facebook -->
                 <a href="https://www.facebook.com/AnkitMeenFaKarki/" target="_blank"  class="transform hover:scale-110 hover:text-blue-500 transition-all duration-200">
                     <ion-icon name="logo-facebook"  class="text-3xl"></ion-icon>
                 </a>
-                
             </div>
         </div>
 
