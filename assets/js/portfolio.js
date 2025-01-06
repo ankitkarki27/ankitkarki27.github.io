@@ -130,7 +130,7 @@ function createProjectCard(project) {
                 <div class="flex space-x-4">
                     ${project.github ? `
                         <a href="${project.github}" target="_blank" class="text-sm text-gray-200 hover:text-blue-400 transition-transform transform">
-                            <i class="fab fa-github"></i> Code
+                            <i class="fab fa-github"></i>  Code
                         </a>
                     ` : ''}
                     ${project.link ? `
@@ -139,7 +139,7 @@ function createProjectCard(project) {
                         </a>
                     ` : ''}
                 </div>
-                <div class="flex items-center text-sm text-gray-400">
+                <div class="flex items-center text-sm text-gray-200">
                     <i class="far fa-calendar-alt mr-2"></i>
                     <span>${project.date}</span>
                 </div>
