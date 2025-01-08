@@ -126,6 +126,8 @@ function createProjectCard(project) {
         <div class="p-6 bg-gray-800 rounded-b-xl">
           <h3 class="text-white text-xl font-bold mb-2 group-hover:text-blue-400 transition duration-300">${project.title}</h3>
             <p class="text-gray-300 text-sm mb-6 justify">${project.description}</p>
+           <hr style="border: 1px solid gray;">
+            <br>
             <div class="flex justify-between items-center">
                 <div class="flex space-x-4">
                     ${project.github ? `
