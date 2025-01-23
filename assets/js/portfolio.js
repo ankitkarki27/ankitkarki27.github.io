@@ -112,7 +112,7 @@ const projects = [
 // Function to create a project card
 function createProjectCard(project) {
     return `
-    <div class="group relative overflow-hidden rounded-xl bg-gray-800 shadow-lg max-h-96 hover:shadow-2xl transition-shadow project-card" data-category="${project.category}">
+    <di v class="group relative overflow-hidden rounded-xl bg-gray-800 shadow-lg max-h-96 hover:shadow-2xl transition-shadow project-card" data-category="${project.category}">
         <div class="relative overflow-hidden">
             <img src="${project.image}" alt="${project.title}" class="w-90 h-50 object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -147,8 +147,9 @@ function createProjectCard(project) {
                 </div>
             </div>
         </div>
-    </div>`;
+    </di>`;
 }
+
 
 // Container element
 const projectsGrid = document.getElementById("projects-grid");
@@ -177,11 +178,11 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', () => {
             // Update active button
             filterButtons.forEach(btn => {
-                btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                btn.classList.remove('active', 'bg-blue-800', 'text-white');
                 btn.classList.add('bg-gray-200', 'text-gray-800');
             });
             button.classList.remove('bg-gray-200', 'text-gray-800');
-            button.classList.add('active', 'bg-blue-600', 'text-white');
+            button.classList.add('active', 'bg-blue-800', 'text-white');
 
             // Filter projects
             filterProjects(button.dataset.filter);
