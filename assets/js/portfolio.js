@@ -34,18 +34,18 @@ mobileMenu.classList.toggle('hidden');
 // Projects data
 const projects = [
     {
-        title: "JobsNepal: Job Portal",
+        title: "Job Portal System",
         category: "full-stack",
-        description: "A full-stack Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
+        description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
         image: "assets/image/project-jobsnepal.png",
         tags: ["Laravel", "MySQL", "Tailwind CSS"],
-        github: "https://github.com/ankitkarki27/Lara-job-portals",
+        github: "https://github.com/ankitkarki27/job-portal",
         date: "2024"
     },
     {
         title: "Trendy : E-commerce", 
         category: "full-stack",
-        description: "A full-stack E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
+        description: "An E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
