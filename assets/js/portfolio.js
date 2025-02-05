@@ -37,7 +37,7 @@ const projects = [
         title: "Job Portal System",
         category: "full-stack",
         description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
-        image: "assets/image/project-jobsnepal.png",
+        image: "assets/image/project-jobportal.jpg",
         tags: ["Laravel", "MySQL", "Tailwind CSS"],
         github: "https://github.com/ankitkarki27/job-portal",
         date: "2024"
