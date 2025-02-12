@@ -34,7 +34,7 @@ mobileMenu.classList.toggle('hidden');
 // Projects data
 const projects = [
     {
-        title: "Jobs Nepal",
+        title: "Job Portal System",
         category: "full-stack",
         description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
         image: "assets/image/project-jobportal.jpg",
