@@ -34,6 +34,16 @@ mobileMenu.classList.toggle('hidden');
 // Projects data
 const projects = [
     {
+        title: "Rainbow Constructions",
+        category: "full-stack",
+        description: "A full-stack website providing information about our services, projects, and company history",
+        image: "assets/image/construction-company.png",
+        tags: ["React","Laravel", "MySQL", "Tailwind"],
+        github: "https://github.com/ankitkarki27/Construction-backend",
+        link: "https://rainbowconstructions.vercel.app/",
+        date: "2025"
+    },
+    {
         title: "Jobs Nepal",
         category: "full-stack",
         description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
@@ -42,6 +52,7 @@ const projects = [
         github: "https://github.com/ankitkarki27/job-portal",
         date: "2024"
     },
+   
     {
         title: "Trendy : E-commerce", 
         category: "full-stack",
