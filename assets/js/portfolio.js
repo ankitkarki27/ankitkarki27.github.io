@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     new Typed('#typed-output', {
         strings: [
             'BCA Student', 
+            'Backend Developer', 
+            'Laravel Developer', 
             'Django Developer', 
-            'Backend Developer',
-            'PHP Developer', 
             'Learner',
             'Problem Solver'
         ],
