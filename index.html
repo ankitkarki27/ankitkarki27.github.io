@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>अंकित</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/portfolio2.js"></script>
-    
+    <script src="assets/js/portfolio.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Liter&family=Mako&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -73,19 +73,20 @@
 </head>
 
 <body class="text-white min-h-screen">
-      <!-- Navigation -->
-    <nav class="fixed w-full top-0 left-0 px-16 py-4 backdrop-blur-md z-50 transition-colors">  
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 left-0 px-16 py-4 backdrop-blur-md z-50 transition-colors">
         <div class="border-b border-gray-800 pb-4 max-w-4xl mx-auto flex justify-between items-center">
             <div class="text-xl font-bold">अंकित</div>
-            
+
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center text-sm space-x-8">
                 <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
                 <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
                 <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                <a href="assets/resume/Ankit Karki - Resume.pdf" class="bg-gray-800 text-white px-4 py-2 rounded-xl hover:bg-gray-900 transition font-sm">Resume</a>
+                <a href="assets/resume/Ankit Karki - Resume.pdf"
+                    class="bg-gray-800 text-white px-4 py-2 rounded-xl hover:bg-gray-900 transition font-sm">Resume</a>
             </div>
-            
+
             <!-- Mobile Menu Button -->
             <button id="mobileMenuBtn" class="md:hidden text-gray-400 hover:text-white">
                 <i class="fas fa-bars text-xl"></i>
@@ -94,12 +95,14 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu mobile-menu-hidden fixed w-full top-0 left-0 bg-black/95 backdrop-blur-md z-40 pt-16 pb-8 px-4 md:hidden">
+    <div id="mobileMenu"
+        class="mobile-menu mobile-menu-hidden fixed w-full top-0 left-0 bg-black/95 backdrop-blur-md z-40 pt-16 pb-8 px-4 md:hidden">
         <div class="flex flex-col space-y-4">
             <a href="#about" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">About</a>
             <a href="#projects" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">Projects</a>
             <a href="#contact" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">Contact</a>
-            <a href="assets/resume/Ankit Karki - Resume.pdf" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition text-center font-medium mt-2">Resume</a>
+            <a href="assets/resume/Ankit Karki - Resume.pdf"
+                class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition text-center font-medium mt-2">Resume</a>
         </div>
     </div>
 
@@ -111,28 +114,40 @@
                 <h1 class="text-4xl md:text-5xl font-bold mb-1 text-white">ankit karki</h1>
                 <p class="text-lg md:text-lg text-gray-400 mb-8">Backend Developer</p>
 
-                  <div class="text-gray-400 leading-relaxed mb-12 space-y-4">
+                <div class="text-gray-400 leading-relaxed mb-12 space-y-4">
                     <p>
-                        I'm a passionate <span class="text-white font-medium">Backend Developer</span> with expertise in Django, Python, and building scalable web applications. Based in Kathmandu, Nepal, I specialize in creating robust server-side solutions.
+                        I'm a passionate <span class="text-white font-medium">Backend Developer</span> with expertise in
+                        Django, Python, and building scalable web applications. Based in Kathmandu, Nepal, I specialize
+                        in creating robust server-side solutions.
                     </p>
                     <p>
-                        My focus is on developing efficient APIs, optimizing database performance, and implementing secure authentication systems to power modern web applications.
+                        My focus is on developing efficient APIs, optimizing database performance, and implementing
+                        secure authentication systems to power modern web applications.
                     </p>
                     <p>
-                        Currently working on <span class="text-white font-medium">Trendy</span> (e-commerce platform) and <span class="text-white font-medium">ePadhai</span> (LMS platform), where I architect and implement core backend functionalities.
+                        Currently working on <span class="text-white font-medium">Trendy</span> (e-commerce platform)
+                        and <span class="text-white font-medium">ePadhai</span> (LMS platform), where I architect and
+                        implement core backend functionalities.
                     </p>
                 </div>
             </div>
 
             <h2 class="text-xl font-bold mb-4 text-white animate-fade-in">Skills</h2>
             <div class="flex flex-wrap gap-3 text-sm animate-slide-up stagger-1">
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Python</span>
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django</span>
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django REST Framework</span>
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">PostgreSQL</span>
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">MySQL</span>
-                <span class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Laravel</span>
-                </div>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Python</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django
+                    REST Framework</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">PostgreSQL</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">MySQL</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Laravel</span>
+            </div>
         </div>
     </section>
 
@@ -151,16 +166,16 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold mb-8 text-white animate-fade-in">Let's Connect</h2>
             <div class="flex space-x-6 animate-slide-up">
-                
+
                 <a href="https://github.com/ankitkarki27" target="_blank"
                     class="text-gray-400 hover:text-white transition-colors text-2xl">
-                   <i class="fa-brands fa-github"></i>
-                    
+                    <i class="fa-brands fa-github"></i>
+
                 </a>
                 <a href="https://www.linkedin.com/in/ankitkarki27/" target="_blank"
                     class="text-gray-400 hover:text-white transition-colors text-2xl">
                     <i class="fa-brands fa-linkedin-in"></i>
-                    
+
                 </a>
                 <a href="mailto:ankitkarki8088@gmail.com" target="_blank"
                     class="text-gray-400 hover:text-white transition-colors text-2xl">
@@ -169,7 +184,7 @@
                 </a>
                 <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank"
                     class="text-gray-400 hover:text-white transition-colors text-2xl">
-                       <i class="fas fa-file-pdf"></i>
+                    <i class="fas fa-file-pdf"></i>
                 </a>
             </div>
         </div>
