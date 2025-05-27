@@ -1,0 +1,381 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Ankit Karki's Portfolio" />
+    <meta property="og:description" content="Welcome to my portfolio! Explore my projects and skills." />
+    <meta property="og:image" content="https://ankitkarki27.github.io/assets/image/myphoto.jpg" />
+    <meta property="og:url" content="https://ankitkarki27.github.io/" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ankit Karki's Portfolio">
+    <meta name="twitter:description" content="Welcome to my portfolio! Explore my projects and skills.">
+    <meta name="twitter:image" content="https://ankitkarki27.github.io/assets/image/myphoto.jpg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Mako&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Ubuntu", serif;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-image {
+            animation: float 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 ">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-zinc-900 text-white shadow-lg z-50">
+        <div class="container mx-auto px-10 py-4">
+            <div class="flex items-center justify-between">
+               <!-- Logo -->
+               <div class="flex items-center space-x-2">
+                <a href="#home" class="flex items-center space-x-2">
+
+                <img src="assets/image/alogo.png" alt="Logo" class="w-10 h-10 rounded-full">
+            </a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Home</a>
+                    <a href="#about" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
+                    <a href="#skills" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
+                    <a href="#projects" class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
+                    <a href="#education" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
+                    <a href="#contact" class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
+                
+                </div>
+                <button class="md:hidden" id="menuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobileMenu">
+            <div class="px-10 py-3 space-y-2">
+                <a href="#home" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Home</a>
+                <a href="#about" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
+                <a href="#skills" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
+                <a href="#projects" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
+                <a href="#education" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
+                <a href="#contact" class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-20 flex items-center justify-center bg-zinc-900 ">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 items-center gap-12">
+            <!-- Profile Image -->
+            <div class="flex justify-center md:order-none order-1">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-full absolute -inset-2 animate-pulse"></div>
+                    <img 
+                        src="assets/image/myphoto.jpg"
+                        alt="Profile" 
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover relative z-10 floating-image border-2 border-gray-800 shadow-xl"
+                    >
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="md:order-none order-2">
+                 <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                    Hi, I'm <span class="text-blue-500">Ankit Karki</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl mb-6 text-white">
+                    A <span id="typed-output" class="text-blue-400"></span>
+                </h2>
+
+                <p class="text-gray-200 mb-8">
+                    BCA student and Passionate laravel and Django developer, transforming ideas into innovative digital solutions.
+                </p>
+
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded flex items-center space-x-2">
+                        <i class="fa-regular fa-folder text-white text-xl" ></i>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank" class="border border-blue-600 text-blue-600 hover:bg-blue-400/10 hover:text-white py-2 px-4 rounded flex items-center space-x-2">
+                        <!-- <ion-icon name="document-text-outline" class="text-xl"></ion-icon> -->
+                        <i class="fa-regular fa-file text-gray text-xl" ></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+                
+                <div class="flex space-x-4 mt-6" data-aos="fade-right" data-aos-delay="400">
+                    <a href="https://github.com/ankitkarki27" target="_blank" 
+                       class="text-gray-100 hover:text-gray-600 transform hover:scale-110 transition-all">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ankitkarki27/" target="_blank"
+                       class="text-gray-100 hover:text-[#0A66C2] transform hover:scale-110 transition-all">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                   <a href="mailto:ankitkarki8088@gmail.com"
+                       class="text-gray-100 hover:text-[#EA4335] transform hover:scale-110 transition-all">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a> 
+                    
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+  <!-- About Section -->
+
+<section id="about" class="py-20 bg-zinc-900">
+    <div class="container mx-auto px-6">
+        <span class="text-blue-600 text-center font-medium mb-2 block" data-aos="fade-up">Myself</span>
+        <h2 class="text-2xl font-bold text-center text-gray-50 mb-8">
+            About me
+            <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+        </h2>
+        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12">
+            <div class="mb-8 md:mb-0" data-aos="fade-right">
+                <img src="assets/image/myphoto2.jpg" alt="Profile" class="rounded-lg shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover">
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <p class="text-gray-200 mb-6 text-justify">
+                    I'm a final-year BCA student with a strong passion for backend development, especially with Django abd Laravel. I enjoy building efficient, scalable solutions and am also keen on exploring data science.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors duration-300">
+                        <h3 class="font-bold mb-1 text-blue-400">Experience</h3>
+                        <p class="text-gray-200">Fresher</p>
+                    </div>
+                    <a href="#projects" class="block">
+                    <div ahref #projects class="bg-gray-800 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors duration-300">
+                        <h3 class="font-bold mb-1 text-blue-400">Projects</h3>
+                        <p class="text-gray-200 ">8+ <span class="text-sm">Completed</span></p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-zinc-900">
+    <div class="container mx-auto px-8">
+      <div class="text-left mb-16">
+        
+        <h2 class="text-3xl text-gray-100 font-bold" data-aos="fade-up" data-aos-delay="100">
+          Skills
+          <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+        </h2>
+      </div>
+      
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-zinc-900">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-blue-600 font-medium mb-2 block" data-aos="fade-up">My Work</span>
+            <h2 class="text-3xl text-gray-100 font-bold" data-aos="fade-up" data-aos-delay="100">Recent Projects
+                <div class="h-1 w-12  mx-auto mt-2 rounded-full"></div>
+            </h2>
+           <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 mt-8" id="filter-buttons">
+                <button class="filter-btn active px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-blue-500/30" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="full-stack">
+                    Full Stack
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="frontend">
+                    Frontend
+                </button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white shadow-lg hover:shadow-gray-500/20" data-filter="backend">
+                    Backend
+                </button>
+                
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left" id="projects-grid">
+                <!-- JavaScript projects will be dynamically inserted here -->
+            </div>
+        </div>
+        <div id="projects-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>   
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-20 bg-zinc-900">
+    <div class="container mx-auto px-6 max-w-2xl">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="text-blue-600 font-medium mb-2 block" data-aos="fade-up">My Qualtification</span>
+            <h2 class="text-3xl font-bold text-gray-50" data-aos="fade-up" data-aos-delay="100">
+                Educational Journey
+            </h2>
+            <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="relative border-l-4 border-gray-700">
+            <!-- Bachelor's Degree -->
+            <div class="mb-12 ml-10 group">
+                <div class="absolute -left-5 w-8 h-8 rounded-full bg-blue-600 border-4 border-gray-900 shadow-md transition-transform duration-300 group-hover:scale-125"></div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-transform transform group-hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
+                        Bachelor's in Computer Application
+                    </h3>
+                    <p class="text-sm text-gray-400 font-medium">
+                        <span class="text-blue-500">Tribhuvan University</span> | Ratna Rajyalaxmi Campus | 2020 - 2025
+                    </p>
+                    <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+                        Studied DSA, DBMS, Software Engineering,Operating System and so on.
+                    </p>
+                </div>
+            </div>
+
+            <!-- High School Diploma -->
+            <div class="mb-12 ml-10 group">
+                <div class="absolute -left-5 w-8 h-8 rounded-full bg-blue-600 border-4 border-gray-900 shadow-md transition-transform duration-300 group-hover:scale-125"></div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-transform transform group-hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
+                        High School
+                    </h3>
+                    <p class="text-sm text-gray-400 font-medium">
+                        <span class="text-blue-500">Kantipur Secondary School</span> | Biratnagar ,Morang | 2017 - 2019
+                    </p>
+                    <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+                        Focused on science and technology subjects.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Elementary School -->
+            <div class="mb-12 ml-10 group">
+                <div class="absolute -left-5 w-8 h-8 rounded-full bg-blue-600 border-4 border-gray-900 shadow-md transition-transform duration-300 group-hover:scale-125"></div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-transform transform group-hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
+                        School
+                    </h3>
+                    <p class="text-sm text-gray-400 font-medium">
+                        <span class="text-blue-500">Children's Garden Academy</span> | Goldhap ,Jhapa | 2016 Batch
+                    </p>
+                    <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+                        Completed my schooling from grade Nursery to 10 in this institution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact Section -->
+<section id="contact" class="py-20 bg-zinc-900">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-blue-600 font-medium mb-2 block" data-aos="fade-up">My Social Networks</span>
+            <h2 class="text-3xl text-gray-100 font-bold" data-aos="fade-up" data-aos-delay="100">Lets Connect
+                <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
+            </h2>
+        </div>    
+        <div class="flex flex-col items-center">
+            <!-- Connect With Me Section -->
+            
+            <div class="flex justify-center space-x-8 text-gray-600 text-center">
+                <a href="https://github.com/ankitkarki27"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-gray-600 transition duration-300">
+                    <i class="fab fa-github text-3xl mb-2"></i>
+                    <span class="text-sm">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ankitkarki27/"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-blue-600 transition duration-300">
+                    <i class="fab fa-linkedin text-3xl mb-2"></i>
+                    <span class="text-sm">LinkedIn</span>
+                </a>
+                <a href="mailto:ankitkarki8088@gmai.com"  target="_blank" class="flex flex-col items-center text-gray-100 hover:text-[#D14836] transition duration-300">
+                    <i class="fa-solid fa-envelope text-3xl mb-2"></i>
+                    <span class="text-sm">Email</span>
+                </a>
+                <a href="assets/resume/Ankit Karki - Resume.pdf" target="_blank"  class="flex flex-col items-center text-gray-100 hover:text-blue-400 transition duration-300">
+                    <i class="fa-solid fa-file-pdf text-3xl mb-2"></i>
+                    <span class="text-sm">Resume</span>
+                </>
+            </div>
+        <div class="mt-6 flex justify-center space-x-4 text-sm text-gray-600">
+            <a href="mailto:ankitkarki8088@gmai.com"  target="_blank" class="hover:text-gray-200 transition-colors">
+                ankitkarki8088@gmail.com</a>
+                <span>||</span>
+                <a href="tel:+1234567890"  target="_blank" class="hover:text-gray-200 transition-colors">
+                +9779823645664
+            </a>
+        </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-zinc-900 text-white py-8">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold mb-4 md:mb-0 transition-colors cursor-pointer">AK.</div>
+            
+            <div class="flex space-x-6">                 
+                <a href="https://youtu.be/i90NXcPAkds?si=Vv3odJuhzk-I65zL" target="_blank"  class="transform hover:scale-110 hover:text-red-500 transition-all duration-200">
+                    <ion-icon name="logo-youtube"  class="text-3xl"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/meenfaforlife/"  target="_blank"  class="transform hover:scale-110 hover:text-pink-500 transition-all duration-200">
+                    <ion-icon name="logo-instagram"  class="text-3xl"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/AnkitMeenFaKarki/" target="_blank"  class="transform hover:scale-110 hover:text-blue-500 transition-all duration-200">
+                    <ion-icon name="logo-facebook"  class="text-3xl"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-8 border-t border-gray-50 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p id="copyright" class="text-gray-400 text-sm">
+                    © <span id="year"></span> Ankit Karki. All rights reserved.
+                </p>
+                
+                <div class="mt-4 md:mt-0">
+                    <nav class="flex space-x-4 text-sm text-gray-400">
+                        <a href="#home" class="hover:text-white transition-colors">Home</a>
+                        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
+</script>
+
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>        

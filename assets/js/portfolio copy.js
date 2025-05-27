@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     new Typed('#typed-output', {
         strings: [
             'BCA Student', 
+            'Backend Developer', 
+            'Laravel Developer', 
             'Django Developer', 
-            'Backend Developer',
-            'PHP Developer', 
             'Learner',
             'Problem Solver'
         ],
@@ -34,7 +34,17 @@ mobileMenu.classList.toggle('hidden');
 // Projects data
 const projects = [
     {
-        title: "Job Portal System",
+        title: "Rainbow Constructions",
+        category: "full-stack",
+        description: "A full-stack website providing information about our services, projects, and company history",
+        image: "assets/image/construction-company.png",
+        tags: ["React","Laravel", "MySQL", "Tailwind"],
+        github: "https://github.com/ankitkarki27/Construction-backend",
+        link: "https://rainbowconstructions.vercel.app/",
+        date: "2025"
+    },
+    {
+        title: "Jobs Nepal",
         category: "full-stack",
         description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
         image: "assets/image/project-jobportal.jpg",
@@ -42,6 +52,7 @@ const projects = [
         github: "https://github.com/ankitkarki27/job-portal",
         date: "2024"
     },
+   
     {
         title: "Trendy : E-commerce", 
         category: "full-stack",
@@ -49,6 +60,7 @@ const projects = [
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
+        link: "https://ankitkarki27.pythonanywhere.com/",
         date: "2024"
     },
     {
