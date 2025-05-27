@@ -60,6 +60,7 @@ const projects = [
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
+        link: "https://ankitkarki27.pythonanywhere.com/",
         date: "2024"
     },
     {
