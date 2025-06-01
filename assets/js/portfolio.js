@@ -2,27 +2,27 @@
 const projects = [
     {
         title: "Constructions Company Website",
-        description: "A full-stack website providing information about our services, projects, and company history",
+        description: "A full-stack web app built with Laravel, React (Vite), and MySQL. Admins can easily manage and publish projects, blogs, and services. Visitors can explore project galleries, read blog posts, and learn about the company. Fully responsive and optimized for a smooth user experience.",
         tags: ["React", "Laravel", "MySQL", "Tailwind"],
         github: "https://github.com/ankitkarki27/Construction-backend",
         link: "https://rainbowconstructions.vercel.app/"
     },
     {
         title: "Jobs Nepal",
-        description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
+        description: "A job portal built with Laravel, Tailwind CSS, and MySQL. Companies can post job openings, and seekers can browse and apply easily through a user-friendly interface.",
         tags: ["Laravel", "MySQL", "Tailwind CSS"],
         github: "https://github.com/ankitkarki27/job-portal",
 
     },
     {
-        title: "Trendy: E-commerce App",
-        description: "An E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
+        title: "Trend-e-vision: E-commerce App",
+        description: "An e-commerce platform built with Django, Tailwind CSS, and PostgreSQL. It offers a seamless shopping experience with product browsing, order and checkout.",
         link: "https://ankitkarki27.pythonanywhere.com/",
-        github: "#"
+        github: "https://github.com/ankitkarki27/dj-ecomstore.git"
     },
     {
         title: "Bookmarker",
-        description: "A full-stack web application for saving, organizing, and managing favorite websites link efficiently.",
+        description: "A full-stack web app for efficiently saving, organizing, and managing your favorite website links in one place.",
         tags: ["Django", "React"],
         github: "https://github.com/ankitkarki27/bookmarker",
         link: "https://bookmarker-theta.vercel.app/",
@@ -30,7 +30,7 @@ const projects = [
     },
     {
         title: "Donors Nepal",
-        description: "A full-stack Online Blood Donors Finder System built with PHP,Laravel, MySQL, HTML, CSS and Bootstrap.",
+        description: "An online blood donor finder built with PHP, MySQL, and Bootstrap. It connects blood seekers with nearby donors using the Haversine algorithm for accurate location-based matching.",
         tags: ["PHP", "Laravel", "MySQL"],
         github: "https://github.com/ankitkarki27/Donors-Nepal.git",
         link: "https://github.com/ankitkarki27/Donors-Nepal.git",

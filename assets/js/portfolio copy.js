@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     new Typed('#typed-output', {
         strings: [
-            'BCA Student', 
-            'Backend Developer', 
-            'Laravel Developer', 
-            'Django Developer', 
+            'BCA Student',
+            'Backend Developer',
+            'Laravel Developer',
+            'Django Developer',
             'Learner',
             'Problem Solver'
         ],
@@ -28,7 +28,7 @@ const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
 menuBtn.addEventListener('click', () => {
-mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('hidden');
 });
 
 // Projects data
@@ -38,7 +38,7 @@ const projects = [
         category: "full-stack",
         description: "A full-stack website providing information about our services, projects, and company history",
         image: "assets/image/construction-company.png",
-        tags: ["React","Laravel", "MySQL", "Tailwind"],
+        tags: ["React", "Laravel", "MySQL", "Tailwind"],
         github: "https://github.com/ankitkarki27/Construction-backend",
         link: "https://rainbowconstructions.vercel.app/",
         date: "2025"
@@ -52,9 +52,9 @@ const projects = [
         github: "https://github.com/ankitkarki27/job-portal",
         date: "2024"
     },
-   
+
     {
-        title: "Trendy : E-commerce", 
+        title: "Trend-e-vision: E-commerce App",
         category: "full-stack",
         description: "An E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
         image: "assets/image/project-trendy.png",
@@ -64,7 +64,7 @@ const projects = [
         date: "2024"
     },
     {
-        title: "Bookmarker", 
+        title: "Bookmarker",
         category: "full-stack",
         description: "A full-stack web application for saving, organizing, and managing favorite websites link efficiently.",
         image: "assets/image/project-bookmarker.jpg",
@@ -84,7 +84,7 @@ const projects = [
         date: "2023"
     },
     {
-        title: "Blood Donors Nepal", 
+        title: "Blood Donors Nepal",
         category: "full-stack",
         description: "A full-stack Online Blood Donors Finder System built with PHP,Laravel, MySQL, HTML, CSS and Bootstrap.",
         image: "assets/image/project-dn.jpg",
@@ -93,7 +93,7 @@ const projects = [
         date: "2024"
     },
     {
-        title: "Uthaoo: Online Scrap Collection System", 
+        title: "Uthaoo: Online Scrap Collection System",
         category: "full-stack",
         description: "A full-stack Scrap Collection System built with PHP, MySQL, HTML, CSS and JS.",
         image: "assets/image/project-uthaoo.jpg",
