@@ -84,25 +84,7 @@ const projects = [
         date: "2023"
     },
     {
-        title: "Blogging System API", 
-        category: "backend",
-        description: "A backend API for managing blogging system.It supports post creation, updates and deletes.",
-        image: "assets/image/project-blog-api.png",
-        tags: ["Django", "Django Rest Framework"],
-        github: "https://github.com/ankitkarki27/blog-system-backend.git",
-        date: "2024"
-    },
-    {
-        title: "React Todo App", 
-        category: "full-stack",
-        description: "A full-stack Todo app with CRUD functionality.It is built using Django REST API and React.",
-        image: "assets/image/project-todo.jpg",
-        tags: ["Django", "React"],
-        github: "https://github.com/ankitkarki27/django-react-todo-rest-api.git",
-        date: "2024"
-    },
-    {
-        title: "Donors Nepal", 
+        title: "Blood Donors Nepal", 
         category: "full-stack",
         description: "A full-stack Online Blood Donors Finder System built with PHP,Laravel, MySQL, HTML, CSS and Bootstrap.",
         image: "assets/image/project-dn.jpg",
@@ -111,9 +93,9 @@ const projects = [
         date: "2024"
     },
     {
-        title: "Uthaoo", 
+        title: "Uthaoo: Online Scrap Collection System", 
         category: "full-stack",
-        description: "A full-stack Scrap Management System built with PHP, MySQL, HTML, CSS and JS.",
+        description: "A full-stack Scrap Collection System built with PHP, MySQL, HTML, CSS and JS.",
         image: "assets/image/project-uthaoo.jpg",
         tags: ["PHP", "MySQL"],
         github: "https://github.com/ankitkarki27/uthaoo-Online-Scrap-Collection-System.git",
@@ -124,7 +106,7 @@ const projects = [
 // Function to create a project card
 function createProjectCard(project) {
     return `
-    <di v class="group relative overflow-hidden rounded-xl bg-gray-800 shadow-lg max-h-96 hover:shadow-2xl transition-shadow project-card" data-category="${project.category}">
+    <div class="group relative overflow-hidden rounded-xl bg-gray-950 shadow-lg max-h-96 hover:shadow-2xl transition-shadow project-card" data-category="${project.category}">
         <div class="relative overflow-hidden">
             <img src="${project.image}" alt="${project.title}" class="w-90 h-50 object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -135,7 +117,7 @@ function createProjectCard(project) {
                 </div>
             </div>
         </div>
-        <div class="p-6 bg-gray-800 rounded-b-xl">
+        <div class="p-6 bg-gray-950 rounded-b-xl">
           <h3 class="text-white text-xl font-bold mb-2 group-hover:text-blue-400 transition duration-300">${project.title}</h3>
             <p class="text-gray-300 text-sm mb-6 justify">${project.description}</p>
            <hr style="border: 1px solid gray;">
@@ -159,7 +141,7 @@ function createProjectCard(project) {
                 </div>
             </div>
         </div>
-    </di>`;
+    </div>`;
 }
 
 
