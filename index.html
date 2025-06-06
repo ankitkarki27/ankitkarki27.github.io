@@ -1,543 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Ankit Karki's Portfolio" />
-    <meta property="og:description" content="Welcome to my portfolio! Explore my projects and skills." />
-    <meta property="og:image" content="https://ankitkarki27.github.io/assets/image/myphoto.jpg" />
-    <meta property="og:url" content="https://ankitkarki27.github.io/" />
-    <meta property="og:type" content="website" />
-    <!-- Twitter meta tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ankit Karki's Portfolio">
-    <meta name="twitter:description" content="Welcome to my portfolio! Explore my projects and skills.">
-    <meta name="twitter:image" content="https://ankitkarki27.github.io/assets/image/myphoto.jpg">
-    <!-- Tailwind CSS -->
+    <title>अंकित</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Typed.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <!-- Font Awesome -->
+    <script src="assets/js/portfolio.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
-    <!-- Google Fonts: Plus Jakarta Sans -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Liter&family=Mako&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+
     <style>
         body {
-            font-family: "Ubuntu", serif;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        .floating-image {
-            animation: float 5s ease-in-out infinite;
+            font-family: "Poppins", serif;
+            background-color: #000;
         }
     </style>
 </head>
 
-<body class="bg-black">
+<body class="text-white min-h-screen">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
-        <div class="container mx-auto px-10 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <a href="#home" class="flex items-center text-xl font-bold space-x-2">
-                        अंकित
-                        <!-- <img src="assets/image/alogo.png" alt="Logo" class="w-10 h-10 rounded-full"> -->
-                    </a>
-                </div>
-                <div class="hidden md:flex space-x-4">
-                    <a href="#home"
-                        class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Home</a>
-                    <a href="#about"
-                        class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
-                    <a href="#skills"
-                        class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
-                    <a href="#projects"
-                        class="text-gray-100 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
-                    <a href="#education"
-                        class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
-                    <a href="#contact"
-                        class="text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
+    <nav class="fixed w-full top-0 left-0 px-16 py-4 backdrop-blur-md z-50 transition-colors">
+        <div class="border-b border-gray-800 pb-4 max-w-4xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">अंकित</div>
 
-                </div>
-                <button class="md:hidden" id="menuBtn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center text-sm space-x-8">
+                <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                <a href="https://drive.google.com/file/d/1bTqSOuzPvr34nuxSrdb36tpSxGywTKVp/view?usp=sharing"
+                    class="bg-gray-800 text-white px-4 py-2 rounded-xl hover:bg-gray-900 transition font-sm">Resume</a>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden" id="mobileMenu">
-            <div class="px-10 py-3 space-y-2">
-                <a href="#home"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Home</a>
-                <a href="#about"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">About</a>
-                <a href="#skills"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Skills</a>
-                <a href="#projects"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Projects</a>
-                <a href="#education"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Education</a>
-                <a href="#contact"
-                    class="block text-gray-50 text-sm hover:underline hover:decoration-blue-500 hover:underline-offset-8">Contact</a>
-            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-400 hover:text-white">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="mobile-menu mobile-menu-hidden fixed w-full top-0 left-0 bg-black/95 backdrop-blur-md z-40 pt-16 pb-8 px-4 md:hidden">
+        <div class="flex flex-col space-y-4">
+            <a href="#about" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">About</a>
+            <a href="#projects" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">Projects</a>
+            <a href="#contact" class="mobile-nav-link text-gray-400 hover:text-white py-2 px-4">Contact</a>
+            <a href="assets/resume/Ankit Karki - Resume.pdf"
+                class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition text-center font-medium mt-2">Resume</a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen pt-20 flex items-center justify-center bg-black   ">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 items-center gap-12">
-                <!-- Profile Image -->
-                <!-- <div class="flex justify-center md:order-none order-1">
-                    <div class="relative">
-                        <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-full absolute -inset-2 animate-pulse">
-                        <div class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-gray-900 px-4 py-2 rounded-full shadow-lg border border-gray-800">
-                        <span class="text-sm font-medium text-blue-400">Open to Work</span>
-                    </div>
-                        </div>
-                        <img src="assets/image/myphoto.jpg" alt="Profile"
-                            class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover relative z-10 floating-image border-2 border-gray-800 shadow-xl">
-                    
-                      </div>
-                </div> -->
+    <section id="about" class="pt-24 pb-16 px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Main Content -->
+            <div class="animate-slide-up">
+                <h1 class="text-4xl md:text-5xl font-bold mb-1 text-white">Ankit Karki</h1>
+                <p class="text-lg md:text-lg text-gray-400 mb-8">Backend Developer</p>
 
-                   <div class="flex justify-center order-last lg:order-first">
-                <div class="relative group">
-                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 blur-xl group-hover:opacity-30 transition-all duration-500"></div>
-                    <div class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl group-hover:border-blue-500/30 transition-all duration-300">
-                        <img src="assets/image/myphoto.jpg" alt="Ankit Karki" 
-                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             loading="eager">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-gray-900 px-4 py-2 rounded-full shadow-lg border border-gray-800">
-                        <span class="text-sm font-medium text-blue-400">Open to Work</span>
-                    </div>
-                </div>
-            </div>
-                <!-- Content -->
-                <div class="md:order-none order-2">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
-                        Hi, I'm <span class="text-blue-500">Ankit Karki</span>
-                    </h1>
-                    <h2 class="text-2xl md:text-3xl mb-6 text-white">
-                        A <span id="typed-output" class="text-blue-400"></span>
-                    </h2>
-
-                    <p class="text-gray-200 mb-8">
-                        BCA student and Passionate laravel and Django developer, transforming ideas into innovative
-                        digital solutions.
+                <div class="text-gray-400 leading-relaxed mb-12 space-y-4">
+                    <p>
+                        I'm a passionate <span class="text-white font-medium">Backend Developer</span> with expertise in
+                        Django, Python, Laravel, and building scalable web applications. Based in Kathmandu, Nepal, I
+                        specialize
+                        in creating robust server-side solutions.
+                    </p>
+                    <p>
+                        My focus is on developing efficient APIs, optimizing database performance, and implementing
+                        secure authentication systems to power modern web applications.
+                    </p>
+                    <p>
+                        Currently working on <span class="text-white font-medium">ePadhai</span> (LMS platform), where I
+                        architect and implement core frontend and backend functionalities using React, Redux, and
+                        Django. I also integrate Cloudinary for media management.
                     </p>
 
-                    <div class="flex space-x-4">
-                        <a href="#projects"
-                            class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded flex items-center space-x-2">
-                            <i class="fa-regular fa-folder text-white text-xl"></i>
-                            <span>View Projects</span>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1bTqSOuzPvr34nuxSrdb36tpSxGywTKVp/view?usp=sharing" target="_blank"
-                            class="border border-blue-600 text-blue-600 hover:bg-blue-400/10 hover:text-white py-2 px-4 rounded flex items-center space-x-2">
-                            <!-- <ion-icon name="document-text-outline" class="text-xl"></ion-icon> -->
-                            <i class="fa-regular fa-file text-gray text-xl"></i>
-                            <span>Resume</span>
-                        </a>
-                    </div>
-
-                    <div class="flex space-x-4 mt-6" data-aos="fade-right" data-aos-delay="400">
-                        <a href="https://github.com/ankitkarki27" target="_blank"
-                            class="text-gray-100 hover:text-gray-600 transform hover:scale-110 transition-all">
-                            <i class="fab fa-github text-2xl"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ankitkarki27/" target="_blank"
-                            class="text-gray-100 hover:text-[#0A66C2] transform hover:scale-110 transition-all">
-                            <i class="fab fa-linkedin text-2xl"></i>
-                        </a>
-                        <a href="mailto:ankitkarki8088@gmail.com"
-                            class="text-gray-100 hover:text-[#EA4335] transform hover:scale-110 transition-all">
-                            <i class="fas fa-envelope text-2xl"></i>
-                        </a>
-
-                    </div>
-
-
                 </div>
+            </div>
 
+            <h2 class="text-xl font-bold mb-4 text-white animate-fade-in">Skills</h2>
+            <div class="flex flex-wrap gap-3 text-sm animate-slide-up stagger-1">
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Python</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Django
+                    REST Framework</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">PostgreSQL</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">MySQL</span>
+                <span
+                    class="bg-gray-800 text-white px-4 py-2 rounded-2xl border border-gray-700 hover:border-gray-600 hover:bg-gray-700 transition-all cursor-default">Laravel</span>
             </div>
         </div>
     </section>
-<!-- About Section -->
-<section id="about" class="py-20 bg-black">
-    <div class="container mx-auto px-6 max-w-5xl">
-        <div class="text-center mb-12">
-            <span class="text-blue-400 font-medium tracking-wider" data-aos="fade-up">GET TO KNOW ME</span>
-            <h2 class="text-3xl font-bold text-gray-50 mt-2 mb-4">
-                About Me
-                <div class="h-1 w-16 bg-blue-500 mx-auto mt-3 rounded-full"></div>
-            </h2>
-        </div>
-        
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-2/5" data-aos="fade-right">
-                <div class="relative group">
-                    <img src="assets/image/myphoto2.jpg" alt="Profile"
-                        class="rounded-xl shadow-2xl w-full max-w-xs mx-auto object-cover aspect-square border-2 border-gray-800 group-hover:border-blue-400 transition-all duration-300">
-                    <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300"></div>
-                </div>
-            </div>
-            
-            <div class="lg:w-3/5" data-aos="fade-left">
-                <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-                    I'm a final-year BCA student specializing in backend development with Django and Laravel. 
-                    Passionate about creating efficient, scalable solutions and currently exploring the 
-                    exciting world of data science.
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div class="bg-gray-900 p-5 rounded-xl border border-gray-800 hover:border-blue-400 transition-all duration-300 group">
-                        <div class="flex items-center gap-3">
-                            <div class="bg-gray-800 p-2 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-blue-400">Experience</h3>
-                                <p class="text-gray-300">Fresher</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="#projects" class="block">
-                        <div class="bg-gray-900 p-5 rounded-xl border border-gray-800 hover:border-blue-400 transition-all duration-300 group">
-                            <div class="flex items-center gap-3">
-                                <div class="bg-gray-800 p-2 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-blue-400">Projects</h3>
-                                    <p class="text-gray-300">8+ <span class="text-sm">Completed</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <section id="experience" class="py-12 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-white animate-fade-in">Experience</h2>
 
-<!-- Skills Section -->
-<section id="skills" class="py-20 bg-black">
-    <div class="container mx-auto px-6 max-w-5xl">
-        <div class="text-center mb-16">
-            <span class="text-blue-400 font-medium tracking-wider uppercase text-sm" data-aos="fade-up">Technical Proficiencies</span>
-            <h2 class="text-3xl font-bold text-gray-50 mt-3 mb-6">
-                My Skills
-                <div class="h-0.5 w-16 bg-blue-500 mx-auto mt-4 rounded-full"></div>
-            </h2>
-            <p class="text-gray-400 max-w-2xl mx-auto">Technologies I specialize in</p>
-        </div>
-        
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">Python</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 90%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">Django</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 85%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">Django REST</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 80%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">Laravel</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 75%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">PostgreSQL</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 80%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">MySQL</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 85%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">REST APIs</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 85%"></div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-                <h3 class="font-medium text-gray-50">Data Science</h3>
-                <div class="w-full bg-gray-700 rounded-full h-1.5 mt-2">
-                    <div class="bg-blue-500 h-1.5 rounded-full" style="width: 70%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-   <!-- Projects Section -->
-<section id="projects" class="py-20 bg-black">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <span class="text-blue-400 font-medium mb-2 block" data-aos="fade-up">My Work</span>
-            <h2 class="text-3xl text-gray-100 font-bold mb-6" data-aos="fade-up" data-aos-delay="100">
-                Recent Projects
-                <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
-            </h2>
-            
-            <!-- Simplified Filter Buttons -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
-                <button
-                    class="filter-btn active px-5 py-1.5 rounded-md font-medium transition-all duration-200 bg-gray-900 hover:bg-gray-800 text-gray-300 hover:text-white border border-gray-700 hover:border-blue-400"
-                    data-filter="all">
-                    All
-                </button>
-                <button
-                    class="filter-btn px-5 py-1.5 rounded-md font-medium transition-all duration-200 bg-gray-900 hover:bg-gray-800 text-gray-300 hover:text-white border border-gray-700 hover:border-blue-400"
-                    data-filter="full-stack">
-                    Full Stack
-                </button>
-                <button
-                    class="filter-btn px-5 py-1.5 rounded-md font-medium transition-all duration-200 bg-gray-900 hover:bg-gray-800 text-gray-300 hover:text-white border border-gray-700 hover:border-blue-400"
-                    data-filter="frontend">
-                    Frontend
-                </button>
-                <button
-                    class="filter-btn px-5 py-1.5 rounded-md font-medium transition-all duration-200 bg-gray-900 hover:bg-gray-800 text-gray-300 hover:text-white border border-gray-700 hover:border-blue-400"
-                    data-filter="backend">
-                    Backend
-                </button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left" id="projects-grid">
-                <!-- JavaScript projects will be dynamically inserted here -->
-            </div>
-        </div>
-        <div id="projects-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        </div>
-    </div>
-</section>
-
-
-<!-- Education Section -->
-<section id="education" class="py-20 bg-black">
-    <div class="container mx-auto px-6 max-w-4xl">
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-            <span class="text-blue-400 text-xs font-medium uppercase tracking-widest">Academic Journey</span>
-            <h2 class="text-3xl font-bold text-white mt-3">
-                Education
-                <div class="h-[2px] w-16 bg-gradient-to-r from-blue-500 to-transparent mx-auto mt-4"></div>
-            </h2>
-        </div>
-
-        <!-- Education Timeline -->
-        <div class="relative">
-            <!-- Timeline Bar -->
-            <div class="absolute left-4 h-full w-0.5 bg-gradient-to-b from-blue-500 via-gray-700 to-gray-700"></div>
-            
-            <!-- Bachelor's Degree -->
-            <div class="relative pl-12 pb-12 group">
-                <!-- <div class="absolute left-0 top-1 h-3 w-3 rounded-full bg-blue-500 border-2 border-blue-300 transform group-hover:scale-150 transition-all"></div> -->
-                <div class="bg-black backdrop-blur-sm p-6 rounded-xl border border-gray-800 hover:border-blue-400/30 transition-all">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">Bachelor of Computer Application</h3>
-                            <p class="text-blue-400 font-light">Tribhuvan University</p>
-                        </div>
-                        <span class="text-sm text-gray-400 bg-gray-800 px-3 py-1 rounded-full">2020 - 2025</span>
-                    </div>
-                    <p class="text-gray-400 mt-2">Ratna Rajyalaxmi Campus</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">DSA</span>
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">DBMS</span>
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">OS</span>
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">Software Engineering</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- High School -->
-            <div class="relative pl-12 pb-12 group">
-                <!-- <div class="absolute left-0 top-1 h-3 w-3 rounded-full bg-gray-600 border-2 border-gray-500 transform group-hover:scale-150 transition-all"></div> -->
-                <div class="bg-black p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">High School (Science)</h3>
-                            <p class="text-blue-400 font-light">Kantipur Secondary School</p>
-                        </div>
-                        <span class="text-sm text-gray-400 bg-gray-800 px-3 py-1 rounded-full">2017 - 2019</span>
-                    </div>
-                    <p class="text-gray-400 mt-2">Biratnagar, Morang</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">Physics</span>
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">Chemistry</span>
-                        <span class="text-xs text-gray-300 bg-gray-800/50 px-3 py-1 rounded-full">Mathematics</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- School -->
-            <div class="relative pl-12 group">
-                <!-- <div class="absolute left-0 top-1 h-3 w-3 rounded-full bg-gray-600 border-2 border-gray-500 transform group-hover:scale-150 transition-all"></div> -->
-                <div class="bg-black p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">School Education</h3>
-                            <p class="text-blue-400 font-light">Children's Garden Academy</p>
-                        </div>
-                        <span class="text-sm text-gray-400 bg-gray-800 px-3 py-1 rounded-full">2006 - 2016</span>
-                    </div>
-                    <p class="text-gray-400 mt-2">Goldhap, Jhapa</p>
-                    <p class="text-gray-300 mt-3">Completed Nursery through Grade 10 with academic distinction</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- contact Section -->
-    <section id="contact" class="py-20 bg-black">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-600 font-medium mb-2 block" data-aos="fade-up">My Social Networks</span>
-                <h2 class="text-3xl text-gray-100 font-bold" data-aos="fade-up" data-aos-delay="100">Lets Connect
-                    <div class="h-1 w-12 bg-blue-500 mx-auto mt-2 rounded-full"></div>
-                </h2>
-            </div>
-            <div class="flex flex-col items-center">
-                <!-- Connect With Me Section -->
-
-                <div class="flex justify-center space-x-8 text-gray-600 text-center">
-                    <a href="https://github.com/ankitkarki27" target="_blank"
-                        class="flex flex-col items-center text-gray-100 hover:text-gray-600 transition duration-300">
-                        <i class="fab fa-github text-3xl mb-2"></i>
-                        <span class="text-sm">GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ankitkarki27/" target="_blank"
-                        class="flex flex-col items-center text-gray-100 hover:text-blue-600 transition duration-300">
-                        <i class="fab fa-linkedin text-3xl mb-2"></i>
-                        <span class="text-sm">LinkedIn</span>
-                    </a>
-                    <a href="mailto:ankitkarki8088@gmai.com" target="_blank"
-                        class="flex flex-col items-center text-gray-100 hover:text-[#D14836] transition duration-300">
-                        <i class="fa-solid fa-envelope text-3xl mb-2"></i>
-                        <span class="text-sm">Email</span>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1bTqSOuzPvr34nuxSrdb36tpSxGywTKVp/view?usp=sharing" target="_blank"
-                        class="flex flex-col items-center text-gray-100 hover:text-blue-400 transition duration-300">
-                        <i class="fa-solid fa-file-pdf text-3xl mb-2"></i>
-                        <span class="text-sm">Resume</span>
-                        </>
-                </div>
-                <div class="mt-6 flex justify-center space-x-4 text-sm text-gray-600">
-                    <a href="mailto:ankitkarki8088@gmai.com" target="_blank"
-                        class="hover:text-gray-200 transition-colors">
-                        ankitkarki8088@gmail.com</a>
-                    <span>||</span>
-                    <a href="tel:+1234567890" target="_blank" class="hover:text-gray-200 transition-colors">
-                        +9779823645664
-                    </a>
-                </div>
+            <div class="space-y-8" id="experience-container">
+                <!-- experience will be dynamicallyinserted here by JavaScript -->
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-2xl font-bold mb-4 md:mb-0 transition-colors cursor-pointer">AK.</div>
+    <section id="projects" class="py-8 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-white animate-fade-in">Projects</h2>
 
-                <div class="flex space-x-6">
-                    <a href="https://youtu.be/i90NXcPAkds?si=Vv3odJuhzk-I65zL" target="_blank"
-                        class="transform hover:scale-110 hover:text-red-500 transition-all duration-200">
-                        <ion-icon name="logo-youtube" class="text-3xl"></ion-icon>
-                    </a>
-                    <a href="https://www.instagram.com/meenfaforlife/" target="_blank"
-                        class="transform hover:scale-110 hover:text-pink-500 transition-all duration-200">
-                        <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
-                    </a>
-                    <a href="https://www.facebook.com/AnkitMeenFaKarki/" target="_blank"
-                        class="transform hover:scale-110 hover:text-blue-500 transition-all duration-200">
-                        <ion-icon name="logo-facebook" class="text-3xl"></ion-icon>
-                    </a>
-                </div>
-            </div>
-
-            <div class="mt-8 border-t border-gray-50 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p id="copyright" class="text-gray-400 text-sm">
-                        © <span id="year"></span> Ankit Karki. All rights reserved.
-                    </p>
-
-                    <div class="mt-4 md:mt-0">
-                        <nav class="flex space-x-4 text-sm text-gray-400">
-                            <a href="#home" class="hover:text-white transition-colors">Home</a>
-                            <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-                            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-                        </nav>
-                    </div>
-                </div>
+            <div class="space-y-8" id="projects-container">
+                <!-- Projects will be dynamicallyinserted here by JavaScript -->
             </div>
         </div>
-    </footer>
+    </section>
+
+    <section id="contact" class="py-16 px-8 pb-24">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-white animate-fade-in">Let's Connect</h2>
+            <div class="flex space-x-6 animate-slide-up">
+
+                <a href="https://github.com/ankitkarki27" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors text-2xl">
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+                <a href="https://www.linkedin.com/in/ankitkarki27/" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors text-2xl">
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+                <a href="mailto:ankitkarki8088@gmail.com" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors text-2xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1AKVjMhslY9VcN4BhHj-zNeWb0OaDqnP9/view?usp=sharing"
+                    target="_blank" class="text-gray-400 hover:text-white transition-colors text-2xl">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <script>
-        // Get the current year
-        const currentYear = new Date().getFullYear();
-        document.getElementById('year').textContent = currentYear;
-    </script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-    <script src="assets/js/portfolio copy.js"></script>
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('-translate-y-full');
+        });
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-y-full');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animation classes
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 
-</html> 
+</html>
