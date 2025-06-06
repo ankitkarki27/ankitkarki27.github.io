@@ -31,7 +31,7 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
-// Projects data
+
 const projects = [
     {
         title: "Rainbow Constructions",
@@ -43,6 +43,16 @@ const projects = [
         link: "https://rainbowconstructions.vercel.app/",
         date: "2025"
     },
+    {
+        title: "Real Estate API",
+        category: "backend",
+        description: "A Job Portal system built with Laravel, Tailwind CSS, HTML, JS, and MySQL.",
+        image: "assets/image/project-jobportal.jpg",
+        tags: ["Laravel", "MySQL", "Tailwind CSS"],
+        github: "https://github.com/ankitkarki27/job-portal",
+        date: "2024"
+    },
+
     {
         title: "Jobs Nepal",
         category: "full-stack",
@@ -56,7 +66,7 @@ const projects = [
     {
         title: "Trend-e-vision: E-commerce App",
         category: "full-stack",
-        description: "An E-commerce Store System built with Django, Tailwind CSS, HTML, JS and PostgreSQL.",
+        description: "An E-commerce Store System built with Django, Tailwind CSS and PostgreSQL.",
         image: "assets/image/project-trendy.png",
         tags: ["Django", "PostgreSQL"],
         github: "https://github.com/ankitkarki27/dj-ecomstore.git",
