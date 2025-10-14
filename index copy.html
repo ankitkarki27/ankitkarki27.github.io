@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conneqtly | Coming Soon</title>
+  <link rel="icon" type="image/png" href="assets/image/conneqt-logo-small.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f42ff',
+            'primary-dark': '#18056d',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          spacing: {
+            '18': '4.5rem',
+            '88': '22rem',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #4f42ff 0%, #18056d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="px-6">
+  <!-- Main Content Container -->
+  <div class="max-w-2xl mx-auto">
+    
+    <!-- Logo with enhanced spacing -->
+    <div class="mb-16">
+      <img src="assets/image/conneqt-logo.png" alt="Conneqtly Logo" class="h-16 mx-auto mb-6">
+    </div>
+
+    <!-- Heading with better line spacing -->
+    <div class="mb-12">
+      <h1 class="text-5xl md:text-6xl font-bold mb-8 gradient-text leading-tight">
+        Launching Soon
+      </h1>
+    </div>
+
+    <!-- Tagline with improved typography -->
+    <div class="mb-16">
+      <p class="text-gray-700 text-xl md:text-2xl leading-relaxed max-w-xl mx-auto px-4 font-medium">
+        Connect freely with <span class="font-semibold text-primary">Conneqtly</span> — a simple app to chat, share moments, and stay close with people who matter.
+      </p>
+    </div>
+
+    <!-- Social Icons with better spacing -->
+    <div class="mb-20">
+      <div class="flex space-x-8 justify-center">
+        <a href="#" class="text-gray-500 hover:text-primary text-2xl transform hover:scale-110 transition-all duration-200">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-primary text-2xl transform hover:scale-110 transition-all duration-200">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-primary text-2xl transform hover:scale-110 transition-all duration-200">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-primary text-2xl transform hover:scale-110 transition-all duration-200">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer note -->
+    <div class="mt-24">
+      <p class="text-gray-400 text-sm">&copy; 2025 Conneqtly. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
