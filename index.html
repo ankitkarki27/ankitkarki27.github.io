@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conneqtly | Coming Soon</title>
-  
+
   <!-- Fixed Favicon -->
   <link rel="icon" type="image/png" href="assets/image/connect-logo-small.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
@@ -26,7 +29,7 @@
       }
     }
   </script>
-   <style>
+  <style>
     body {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4f42ff 100%);
       min-height: 100vh;
@@ -49,15 +52,20 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
       background-size: 50px 50px;
       animation: float 20s linear infinite;
       pointer-events: none;
     }
 
     @keyframes float {
-      0% { transform: translate(0, 0) rotate(0deg); }
-      100% { transform: translate(-50px, -50px) rotate(360deg); }
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(-50px, -50px) rotate(360deg);
+      }
     }
 
     .content-container {
@@ -87,10 +95,11 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Main Content Container -->
   <div class="content-container mx-auto">
-    
+
     <!-- Logo -->
     <div class="mb-8 sm:mb-12">
       <div class="logo-container">
@@ -109,21 +118,24 @@
     <!-- Tagline -->
     <div class="mb-8 sm:mb-12 px-2">
       <p class="text-white/90 text-base sm:text-base leading-relaxed max-w-md mx-auto font-medium">
-        Connect freely with Conneqtly - We are building a simple app simple chat app for meaningful connections. Message friends, share moments, stay close.
+        Connect freely with Conneqtly -
+        We are building a space to help you share your ideas, meet like-minded creators, and build something amazing together. Your next collaboration could be just a click away.
       </p>
     </div>
 
     <!-- Social Icons -->
     <div class="mb-4 sm:mb-6">
       <div class="flex space-x-2 sm:space-x-2 justify-center">
-        
-        <a href="https://www.youtube.com/@meenfaforlifeyt" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-white text-lg sm:text-xl transition-all duration-300 border border-white/20">
+
+        <a href="https://www.youtube.com/@meenfaforlifeyt"
+          class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-white text-lg sm:text-xl transition-all duration-300 border border-white/20">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://www.linkedin.com/company/conneqtly/" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-white text-lg sm:text-xl transition-all duration-300 border border-white/20">
+        <a href="https://www.linkedin.com/company/conneqtly/"
+          class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-white text-lg sm:text-xl transition-all duration-300 border border-white/20">
           <i class="fab fa-linkedin"></i>
         </a>
-       
+
       </div>
     </div>
 
@@ -133,4 +145,5 @@
     </div>
   </div>
 </body>
+
 </html>
